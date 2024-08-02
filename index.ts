@@ -16,7 +16,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Sync Database
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
     console.log('Database & tables created!');
 });
 
